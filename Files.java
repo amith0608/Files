@@ -26,13 +26,13 @@ public class Files
   
   	//To append to a file
   try {
-      String data = "Java is the best language";
+      String data = " Java is the best language";
       File f1 = new File("E:\\Amith\\amith.txt");
       if(!f1.exists()) {
          f1.createNewFile();
       }
 
-      FileWriter fileWritter = new FileWriter(f1.getName(),true);//appending
+      FileWriter fileWritter = new FileWriter(f1.getName(),true);
       BufferedWriter bw = new BufferedWriter(fileWritter);
       bw.write(data);
       bw.close();
